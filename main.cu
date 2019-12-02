@@ -144,12 +144,12 @@ __global__ void free_world(hitable **d_list, hitable **d_world, camera **d_camer
 }
 
 int main() {
-    int nx = 1200;
-    int ny = 800;
-    int ns = 10;
+    int nx = 800;
+    int ny = 600;
+    int ns = 1;
     int tx, ty;
     std::cout << "Enter number of blocks\n";
-    std::cin << tx;
+    std::cin >> tx;
     ty = tx;
     std::ofstream output("image.ppm");
     std::cerr << "Rendering a " << nx << "x" << ny << " image with " << ns << " samples per pixel ";
